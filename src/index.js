@@ -1,26 +1,31 @@
 
 exports.min = function min (array) {
-  let result = Math.min(...array);
-  /* let result = array.forEach(el,i,arr => {
-    if(arr[i]< arr[i + 1]){
-        return arr [i];
-    }
-  });*/
+  let result = 0;
+  if (array === [] || array.length === 0){
+    result = 0;
+  } else {
+    result = Math.min(...array);
+  }
   return result; 
 }
 
 exports.max = function max (array) {
-  let result = Math.max(... array);
-  /* let result = array.forEach(...array,i,arr => {
-    
-}); */
+  let result = 0;
+  if (array === [] || array.length === 0){
+    result = 0;
+  } else {
+    result = Math.max(... array);
+  }
 return result;
 }
 
 exports.avg = function avg (array) {
-  let result = Math.avg(...array);
-  /* let result = array.forEach(...array,i,arr => {
-    
-  }); */
+  
+  let result = 0;
+  if (array === [] || array.length === 0){
+    result = 0;
+  } else {
+    result = Math.avg(...array);
+  }
   return result;
 }
